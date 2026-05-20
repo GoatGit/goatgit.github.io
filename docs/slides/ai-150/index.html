@@ -190,22 +190,72 @@
 
   /* ============ Generated content稿 layouts ============ */
   .slide-grid{min-height:72vh;}
+  .frame > .h-xl{font-size:clamp(44px,4.8vw,96px);line-height:1.06;max-width:92vw;}
   .slide-copy .h-xl{font-size:clamp(42px,5.1vw,92px);line-height:1.08;max-width:88vw;}
   .slide-copy .lead{font-size:clamp(20px,1.65vw,34px);line-height:1.42;}
-  .slide-content{font-size:clamp(14px,1.02vw,20px);line-height:1.55;opacity:.86;}
+  .slide-content{font-size:clamp(14px,1.02vw,21px);line-height:1.52;opacity:.88;}
   .slide-content p + p{margin-top:1.1vh;}
   .slide-content code{font-family:var(--mono);font-size:.88em;padding:.08em .38em;border:1px solid rgba(127,127,127,.28);border-radius:4px;}
-  .clean-list{list-style:none;display:grid;gap:1.05vh;margin:0;padding:0;}
+  .clean-list{list-style:none;display:grid;gap:.82vh;margin:0;padding:0;}
   .clean-list li{position:relative;padding-left:1.15em;}
   .clean-list li::before{content:"";position:absolute;left:0;top:.78em;width:.42em;height:1px;background:currentColor;opacity:.5;}
-  .flow-code{font-family:var(--mono);white-space:pre-wrap;font-size:clamp(12px,.9vw,17px);line-height:1.6;padding:1.4vh 1.4vw;margin:0 0 1.4vh 0;border-left:3px solid currentColor;background:rgba(127,127,127,.10);letter-spacing:.03em;}
-  .ppt-table{width:100%;border-collapse:collapse;font-size:clamp(12px,.86vw,16px);line-height:1.42;margin:0 0 1.5vh 0;}
+  .flow-code{font-family:var(--mono);white-space:pre-wrap;font-size:clamp(12px,.9vw,17px);line-height:1.5;padding:1.4vh 1.4vw;margin:0 0 1.4vh 0;border-left:3px solid currentColor;background:rgba(127,127,127,.10);letter-spacing:.03em;}
+  .ppt-table{width:100%;border-collapse:collapse;font-size:clamp(13px,.94vw,18px);line-height:1.42;margin:0 0 1.5vh 0;}
   .ppt-table th,.ppt-table td{border-top:1px solid rgba(127,127,127,.26);padding:.88vh .8vw;text-align:left;vertical-align:top;}
   .ppt-table th{font-family:var(--serif-zh);font-weight:700;opacity:.92;}
   .ppt-table tr:last-child td{border-bottom:1px solid rgba(127,127,127,.26);}
-  .mini-head{font-family:var(--mono);font-size:clamp(10px,.72vw,13px);letter-spacing:.18em;text-transform:uppercase;opacity:.58;margin:1.55vh 0 .65vh;}
+  .mini-head{font-family:var(--mono);font-size:clamp(10px,.68vw,12px);letter-spacing:.18em;text-transform:uppercase;opacity:.58;margin:1.15vh 0 .5vh;}
   .slide-figure{margin-top:5vh;max-height:58vh;}
   .slide-figure img{object-fit:contain;}
+  .slide.layout-rebalance .grid-2-7-5{grid-template-columns:1fr;gap:2.4vh;min-height:0}
+  .slide.layout-rebalance .slide-copy{max-width:86vw}
+  .slide.layout-rebalance .slide-copy .lead{font-size:clamp(20px,1.42vw,30px);line-height:1.42;max-width:78vw}
+  .slide.layout-rebalance .callout{margin-top:2.2vh!important;max-width:62vw;padding:2vh 2vw}
+  .slide.layout-rebalance .slide-content{max-width:86vw;column-count:2;column-gap:4vw;column-rule:1px solid rgba(127,127,127,.18)}
+  .slide.layout-rebalance .slide-content .mini-head,
+  .slide.layout-rebalance .slide-content p,
+  .slide.layout-rebalance .slide-content ul,
+  .slide.layout-rebalance .slide-content pre,
+  .slide.layout-rebalance .slide-content table{break-inside:avoid}
+  .slide.layout-rebalance .slide-content .flow-code{margin-top:0}
+  .slide.layout-rebalance .ppt-table{font-size:clamp(12px,.8vw,15px)}
+  .slide.prompt-example .slide-content{column-count:initial;display:grid;grid-template-columns:1fr 1fr;gap:2.2vw;column-rule:0;align-items:start}
+  .slide.prompt-example .prompt-note{font-size:clamp(13px,.9vw,18px);line-height:1.52}
+  .slide.prompt-example .flow-code{font-size:clamp(8.5px,.6vw,11.5px);line-height:1.27;padding:.95vh 1.1vw}
+  .slide.prompt-example .frame{padding-top:3.1vh!important}
+  .slide.prompt-example .frame > .h-xl{font-size:clamp(38px,4.05vw,78px);line-height:1.02;max-width:92vw}
+  .slide.prompt-example .slide-grid{margin-top:2.4vh!important;min-height:0}
+  .slide.prompt-example .slide-copy .lead{font-size:clamp(18px,1.2vw,25px);line-height:1.35}
+  .slide.goal-map .slide-content{column-count:initial;display:grid;grid-template-columns:1fr 1.08fr;gap:2.4vw;column-rule:0}
+  .slide.goal-map .ppt-table{font-size:clamp(11px,.72vw,14px);line-height:1.32}
+  .slide.visual-balance .grid-2-7-5{grid-template-columns:6fr 6fr;gap:3vw;min-height:0}
+  .slide.visual-balance .slide-copy{display:grid;gap:2.2vh;align-content:start}
+  .slide.visual-balance .slide-copy .lead{font-size:clamp(20px,1.45vw,30px);line-height:1.42}
+  .slide.visual-balance .callout{margin-top:0!important;max-width:none;padding:2vh 1.8vw}
+  .slide.visual-balance .slide-content{max-width:100%;column-count:initial;column-rule:0}
+  .slide.visual-balance .visual-stack{display:grid;gap:1.6vh;align-content:start}
+  .slide.visual-balance .slide-figure{margin-top:0;max-height:40vh}
+  .slide.visual-balance.visual-tall .slide-figure{max-height:48vh}
+  .slide.visual-balance .ppt-table{font-size:clamp(12px,.86vw,16px);line-height:1.36}
+  .slide.goal-map .ppt-table th,.slide.goal-map .ppt-table td{padding:.64vh .62vw}
+  .slide.tight-visual .grid-2-7-5{grid-template-columns:5.6fr 6.4fr;gap:3vw;min-height:0}
+  .slide.tight-visual .slide-copy{display:grid;gap:2.2vh;align-content:start}
+  .slide.tight-visual .slide-content{font-size:clamp(14px,1vw,20px)}
+  .module-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1vh 1vw;margin-top:.4vh}
+  .module-card{border-top:1px solid rgba(127,127,127,.28);padding:1.1vh 1vw;background:rgba(127,127,127,.07)}
+  .module-card strong{display:block;font-family:var(--serif-zh);font-size:clamp(17px,1.18vw,24px);line-height:1.25;margin-bottom:.5vh}
+  .module-card span{display:block;font-size:clamp(12px,.82vw,16px);line-height:1.38;opacity:.78}
+  .process-ladder{display:grid;gap:1vh;margin-top:.3vh}
+  .process-step{display:grid;grid-template-columns:auto 1fr;gap:.85vw;align-items:start;border-left:3px solid currentColor;background:rgba(127,127,127,.09);padding:1vh 1vw}
+  .process-step .num{font-family:var(--mono);font-size:clamp(14px,.9vw,17px);opacity:.58}
+  .process-step strong{font-size:clamp(17px,1.08vw,22px);line-height:1.28}
+  .process-step span{display:block;margin-top:.25vh;font-size:clamp(12px,.82vw,16px);line-height:1.38;opacity:.72}
+  .loop-panel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1vw;margin-top:.8vh}
+  .loop-panel .module-card{min-height:12vh}
+  .thank-you .h-xl{font-size:clamp(70px,8.8vw,160px);line-height:.95}
+  .thank-you .lead{font-size:clamp(26px,2vw,42px);line-height:1.35;max-width:78vw;margin-top:2.4vh}
+  .thank-you .credit{font-size:clamp(18px,1.25vw,26px);line-height:1.45;opacity:.82}
+  .thank-you .module-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:6vh}
 
   /* ============ 导航 ============ */
   #nav{position:fixed;left:50%;bottom:2.6vh;transform:translateX(-50%);z-index:30;display:flex;gap:10px;padding:8px 14px;border-radius:999px;background:rgba(0,0,0,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
@@ -504,42 +554,50 @@
      ============================================================ -->
 
 <section class="slide dark">
-  <div class="chrome"><div class="left"><span>01-05 · 人机接口的变化</span><span class="sep"></span></div><div class="right">Vol.150 · 01 / 28</div></div>
+  <div class="chrome"><div class="left"><span>01-06 · 人机接口的变化</span><span class="sep"></span></div><div class="right">Vol.150 · 01 / 31</div></div>
   <div class="frame grid-2-6-6 slide-grid" style="padding-top:4.6vh;align-items:start">
     <div class="col slide-copy">
       <h2 class="h-xl" data-anim>给 AI 装上方向盘，驶向 150 岁的松弛人生</h2>
       <p class="lead" data-anim>一场关于工作、健康、业务与长期成长的 AI 修行。</p>
-      <div class="body-zh slide-content" data-anim><ul class="clean-list"><li>方向盘：决定目标，不被工具牵着走。</li><li>仪表盘：看见过程、风险和反馈。</li><li>刹车系统：保留判断、验证和边界。</li></ul></div>
+      <div class="body-zh slide-content" data-anim></div>
     </div>
-    <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim>
-      <img src="images/01-cockpit.png" alt="给 AI 装上方向盘，驶向 150 岁的松弛人生">
-    </figure>
+    <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim><img src="images/01-cockpit.png" alt="给 AI 装上方向盘，驶向 150 岁的松弛人生"></figure>
   </div>
   <div class="foot"><div class="title">AI 时代的松弛感，不来自放手，而来自可控。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
 <section class="slide light">
-  <div class="chrome"><div class="left"><span>01-05 · 人机接口的变化</span><span class="sep"></span></div><div class="right">Vol.150 · 02 / 28</div></div>
+  <div class="chrome"><div class="left"><span>01-06 · 人机接口的变化</span><span class="sep"></span></div><div class="right">Vol.150 · 02 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
-    <h2 class="h-xl" data-anim>这不是一场工具清单分享</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>工具会迭代，方法会迁移；真正有复利的是完成事情的方式。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">今天要带走的不是某个按钮，而是一套把 AI 放进工作和生活的方法。</span></div>
-      </div>
+    <h2 class="h-xl" data-anim>不分享工具清单 ，探讨方法论</h2>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>工具会迭代，方法会迁移；真正有复利的是完成事情的方式。</p>
+        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">今天要带走的不是某个按钮，而是一套把 AI 放进工作和生活的方法。</span></div></div>
       <div class="body-zh slide-content" data-anim><table class="ppt-table"><thead><tr><th>工具清单</th><th>系统能力</th></tr></thead><tbody><tr><td>关注模型名</td><td>关注任务如何被交付</td></tr><tr><td>追逐新功能</td><td>建立稳定流程</td></tr><tr><td>一次性提效</td><td>形成可复用资产</td></tr><tr><td>靠感觉判断</td><td>用证据验收结果</td></tr></tbody></table></div>
     </div>
   </div>
   <div class="foot"><div class="title">今天要带走的不是某个按钮，而是一套把 AI 放进工作和生活的方法。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
+<section class="slide light layout-rebalance goal-map">
+  <div class="chrome"><div class="left"><span>01-06 · 人机接口的变化</span><span class="sep"></span></div><div class="right">Vol.150 · 03 / 31</div></div>
+  <div class="frame" style="padding-top:4.8vh">
+    <h2 class="h-xl" data-anim>这场分享带走什么</h2>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>不是多一个工具，而是换一种完成事情的方式。</p>
+        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">从工具使用，走向方法、系统、边界和长期复利。</span></div></div>
+      <div class="body-zh slide-content" data-anim><table class="ppt-table"><thead><tr><th>关键词</th><th>要带走的内容</th></tr></thead><tbody><tr><td>判断</td><td>AI 改变的不只是工具，而是完成事情的接口。</td></tr><tr><td>地图</td><td>AI 使用有四个层级，真正复利从工作流开始。</td></tr><tr><td>方法</td><td>把 Vibe Coding 升级成 AI 时代做事方法。</td></tr><tr><td>系统</td><td>用 Harness Engineering 固化成可靠环境。</td></tr><tr><td>边界</td><td>人负责方向、验证、权限和结果。</td></tr><tr><td>长期</td><td>AI 也要服务身体、业务、关系和长期成长。</td></tr></tbody></table>
+<table class="ppt-table"><thead><tr><th>场景</th><th>升级方向</th></tr></thead><tbody><tr><td>写代码</td><td>从一句话生成，到可测试、可审查的软件交付。</td></tr><tr><td>做工作</td><td>从临时问 AI，到会议、文档、项目、复盘工作台。</td></tr><tr><td>管健康</td><td>从靠意志力，到输入、输出、上下文和趋势反馈。</td></tr><tr><td>做业务</td><td>从生成方案，到数据、实验、指标、复盘的业务回路。</td></tr><tr><td>带组织</td><td>从买 AI 工具，到权限、审计、验收、责任边界。</td></tr><tr><td>过人生</td><td>从短期冲刺，到长期复利、持续维护和松弛奋斗。</td></tr></tbody></table></div>
+    </div>
+  </div>
+  <div class="foot"><div class="title">不是多一个工具，而是换一种完成事情的方式。</div><div>AI · WORK · HEALTH · LIFE</div></div>
+</section>
+
 <section class="slide light">
-  <div class="chrome"><div class="left"><span>01-05 · 人机接口的变化</span><span class="sep"></span></div><div class="right">Vol.150 · 03 / 28</div></div>
+  <div class="chrome"><div class="left"><span>01-06 · 人机接口的变化</span><span class="sep"></span></div><div class="right">Vol.150 · 04 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
     <h2 class="h-xl" data-anim>人机接口正在换代</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>过去我们操作软件；现在我们要表达目标、组织上下文、验收结果。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">过去我们操作软件；现在我们要表达目标、组织上下文、验收结果。</span></div>
-      </div>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>过去我们操作软件；现在我们要表达目标、组织上下文、验收结果。</p>
+        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">AI 不只是更聪明的搜索框。</span></div></div>
       <div class="body-zh slide-content" data-anim><table class="ppt-table"><thead><tr><th>旧接口</th><th>新接口</th></tr></thead><tbody><tr><td>打开软件</td><td>说明目标</td></tr><tr><td>点击菜单</td><td>提供上下文</td></tr><tr><td>手工执行</td><td>让系统协作</td></tr><tr><td>人脑记流程</td><td>让流程留下痕迹</td></tr></tbody></table>
 <div class="mini-head">解释</div><p>AI 不只是更聪明的搜索框。它正在从“回答问题”进入“参与任务”，人也必须从操作者升级为编排者。</p></div>
     </div>
@@ -547,14 +605,12 @@
   <div class="foot"><div class="title">过去我们操作软件；现在我们要表达目标、组织上下文、验收结果。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
 <section class="slide dark">
-  <div class="chrome"><div class="left"><span>01-05 · 人机接口的变化</span><span class="sep"></span></div><div class="right">Vol.150 · 04 / 28</div></div>
+  <div class="chrome"><div class="left"><span>01-06 · 人机接口的变化</span><span class="sep"></span></div><div class="right">Vol.150 · 05 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
     <h2 class="h-xl" data-anim>能力从技能迁移到系统</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>单点技能仍然重要，但高价值部分正在上移到系统设计。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">单点技能仍然重要，但高价值部分正在上移到系统设计。</span></div>
-      </div>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>单点技能仍然重要，但高价值部分正在上移到系统设计。</p>
+        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">会做一件事，是技能；让一类事持续被做好，是系统能力。</span></div></div>
       <div class="body-zh slide-content" data-anim><ul class="clean-list"><li>技能层：写作、检索、分析、编码、设计。</li><li>流程层：输入、步骤、检查、迭代、交付。</li><li>系统层：模板、知识库、权限、日志、复盘、沉淀。</li></ul>
 <div class="mini-head">解释</div><p>会做一件事，是技能；让一类事持续被做好，是系统能力。AI 越强，人的价值越不该停留在执行末端。</p></div>
     </div>
@@ -562,114 +618,104 @@
   <div class="foot"><div class="title">单点技能仍然重要，但高价值部分正在上移到系统设计。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
 <section class="slide light">
-  <div class="chrome"><div class="left"><span>01-05 · 人机接口的变化</span><span class="sep"></span></div><div class="right">Vol.150 · 05 / 28</div></div>
+  <div class="chrome"><div class="left"><span>01-06 · 人机接口的变化</span><span class="sep"></span></div><div class="right">Vol.150 · 06 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
-    <h2 class="h-xl" data-anim>从“会问问题”到“会编排任务”</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>Prompt 是入口，任务编排才是 AI 时代真正的工作方式。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">高手不是把问题问得更漂亮，而是把任务环境搭得更可靠。</span></div>
-      </div>
+    <h2 class="h-xl" data-anim>会问问题 ≠ 会编排任务</h2>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>Prompt 是入口，任务编排才是 AI 时代真正的工作方式。</p>
+        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">高手不是把问题问得更漂亮，而是把任务环境搭得更可靠。</span></div></div>
       <div class="body-zh slide-content" data-anim><ul class="clean-list"><li>目标：定义要交付什么，而不是只描述想要什么。</li><li>上下文：让 AI 看到材料、历史、约束和偏好。</li><li>工具：把文档、代码、数据、网页和自动化接进来。</li><li>验证：用测试、引用、日志、截图和人工判断收口。</li></ul></div>
     </div>
   </div>
   <div class="foot"><div class="title">高手不是把问题问得更漂亮，而是把任务环境搭得更可靠。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
-<section class="slide light">
-  <div class="chrome"><div class="left"><span>06-09 · 任务编译</span><span class="sep"></span></div><div class="right">Vol.150 · 06 / 28</div></div>
+<section class="slide light visual-balance">
+  <div class="chrome"><div class="left"><span>07-10 · 任务编译</span><span class="sep"></span></div><div class="right">Vol.150 · 07 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
     <h2 class="h-xl" data-anim>AI 使用的四层地图</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>多数人已经开始用 AI，但真正的差距在于使用层级。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">多数人已经开始用 AI，但真正的差距在于使用层级。</span></div>
-      </div>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>多数人已经开始用 AI，但真正的差距在于使用层级。</p>
+        <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim><img src="images/07-ai-level-map.png" alt="AI 使用的四层地图"></figure></div>
       <div class="body-zh slide-content" data-anim><table class="ppt-table"><thead><tr><th>层级</th><th>典型用法</th><th>价值变化</th></tr></thead><tbody><tr><td>Level 1</td><td>问答解释</td><td>获取答案</td></tr><tr><td>Level 2</td><td>局部提效</td><td>缩短时间</td></tr><tr><td>Level 3</td><td>工作流伙伴</td><td>复用流程</td></tr><tr><td>Level 4</td><td>业务引擎</td><td>嵌入系统</td></tr></tbody></table>
 <div class="mini-head">解释</div><p>Level 1 和 Level 2 解决“快一点”；Level 3 和 Level 4 开始解决“持续做成”。</p></div>
     </div>
   </div>
   <div class="foot"><div class="title">多数人已经开始用 AI，但真正的差距在于使用层级。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
-<section class="slide light">
-  <div class="chrome"><div class="left"><span>06-09 · 任务编译</span><span class="sep"></span></div><div class="right">Vol.150 · 07 / 28</div></div>
+<section class="slide light tight-visual">
+  <div class="chrome"><div class="left"><span>07-10 · 任务编译</span><span class="sep"></span></div><div class="right">Vol.150 · 08 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
-    <h2 class="h-xl" data-anim>任务，不等于流程</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>一句话需求只能得到一次结果；任务协议才能形成稳定流程。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">一句话需求只能得到一次结果；任务协议才能形成稳定流程。</span></div>
-      </div>
+    <h2 class="h-xl" data-anim>任务 ≠ 流程</h2>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>一句话需求只能得到一次结果；任务协议才能形成稳定流程。</p>
+        <div class="process-ladder" data-anim>
+          <div class="process-step"><div class="num">01</div><div><strong>目标</strong><span>先定义要交付什么，而不是只描述想要什么。</span></div></div>
+          <div class="process-step"><div class="num">02</div><div><strong>上下文</strong><span>把材料、历史、约束和偏好放进同一个任务环境。</span></div></div>
+          <div class="process-step"><div class="num">03</div><div><strong>验收</strong><span>用事实、结构、格式和交付路径收口。</span></div></div>
+        </div></div>
       <div class="body-zh slide-content" data-anim><table class="ppt-table"><thead><tr><th>任务</th><th>流程</th></tr></thead><tbody><tr><td>帮我写一篇文章</td><td>先确认读者、场景、观点</td></tr><tr><td>直接生成</td><td>先读素材，再出结构</td></tr><tr><td>看起来能用</td><td>按清单检查事实和表达</td></tr><tr><td>做完即结束</td><td>复盘为模板和规范</td></tr></tbody></table>
 <div class="mini-head">解释</div><p>任务编译，就是把一句话愿望翻译成目标、输入、步骤、验收和沉淀物。</p></div>
     </div>
   </div>
   <div class="foot"><div class="title">一句话需求只能得到一次结果；任务协议才能形成稳定流程。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
-<section class="slide light">
-  <div class="chrome"><div class="left"><span>06-09 · 任务编译</span><span class="sep"></span></div><div class="right">Vol.150 · 08 / 28</div></div>
+<section class="slide light tight-visual">
+  <div class="chrome"><div class="left"><span>07-10 · 任务编译</span><span class="sep"></span></div><div class="right">Vol.150 · 09 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
     <h2 class="h-xl" data-anim>把“帮我一下”改成“和我完成一套流程”</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>AI 的复利不在一次答案，而在下一次可以更快、更稳地重复。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">AI 的复利不在一次答案，而在下一次可以更快、更稳地重复。</span></div>
-      </div>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>AI 的复利不在一次答案，而在下一次可以更快、更稳地重复。</p>
+        <div class="callout" style="margin-top:1.4vh" data-anim><span class="q-big">把一次请求，编译成下一次还能运行的流程。</span></div></div>
       <div class="body-zh slide-content" data-anim><pre class="flow-code">临时问题
 → 明确交付物
 → 拆成步骤
 → 接入材料和工具
 → 设置验收标准
 → 留下模板和记录</pre>
+<div class="module-grid" data-anim><div class="module-card"><strong>输入可复用</strong><span>材料、上下文、偏好、格式不再每次重讲。</span></div><div class="module-card"><strong>步骤可检查</strong><span>每一步都能暂停、追问、重做和回滚。</span></div><div class="module-card"><strong>结果可验收</strong><span>用清单、引用、截图、测试收口。</span></div><div class="module-card"><strong>经验可沉淀</strong><span>把有效做法变成模板、技能或工作台。</span></div></div>
 <div class="mini-head">解释</div><p>从这里开始，AI 不再只是“帮忙的人”，而是进入了一套可运行的工作环境。</p></div>
     </div>
   </div>
   <div class="foot"><div class="title">AI 的复利不在一次答案，而在下一次可以更快、更稳地重复。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
-<section class="slide dark">
-  <div class="chrome"><div class="left"><span>06-09 · 任务编译</span><span class="sep"></span></div><div class="right">Vol.150 · 09 / 28</div></div>
+<section class="slide dark visual-balance">
+  <div class="chrome"><div class="left"><span>07-10 · 任务编译</span><span class="sep"></span></div><div class="right">Vol.150 · 10 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
-    <h2 class="h-xl" data-anim>案例：招股书解读到 ipo-review 技能</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>专业分析不能停在“总结一下”，它需要可追溯、可验证、可复用。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">专业分析不能停在“总结一下”，它需要可追溯、可验证、可复用。</span></div>
-      </div>
-      <div class="body-zh slide-content" data-anim><pre class="flow-code">招股书/PDF
-→ 业务模式拆解
-→ 财务质量分析
-→ 风险与估值问题
-→ 投资报告
-→ ipo-review 技能</pre>
-<div class="mini-head">Vibe Coding 流程</div><ul class="clean-list"><li>先定义交付：不是摘要，而是投资报告。</li><li>再组织上下文：招股书、财务指标、行业材料、可比公司。</li><li>分步执行：业务、客户、收入、利润、现金流、负债、风险逐层拆解。</li><li>证据验收：数字要能回到页码，判断要能回到依据。</li></ul>
-<div class="mini-head">Harness 工程</div><p>把抽取模板、指标清单、风险清单、引用规范和输出格式沉淀进 <code>ipo-review</code>，让下一份招股书从同一套轨道上运行。</p></div>
+    <h2 class="h-xl" data-anim>案例：泰诺麦博招股书到 ipo-review</h2>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>专业分析不能停在“总结一下”，它需要把文件、证据、校验和输出格式一起工程化。</p>
+        <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim><img src="images/10-ipo-review.png" alt="泰诺麦博招股书到 ipo-review"></figure></div>
+      <div class="body-zh slide-content" data-anim><pre class="flow-code">泰诺麦博
+→ 定位上交所 IPO 项目
+→ 拉取招股书与两轮问询
+→ 生成事实底稿
+→ 撰写新股研究报告
+→ 复盘为 ipo-review</pre>
+<div class="mini-head">真实记录</div><ul class="clean-list"><li>第一次 E2E：误把发行保荐书当成首轮问询，第二轮问询未进 workspace，20 分钟超时，无报告。</li><li>修正后：识别 541 页招股书上会稿、166 页首轮问询、35 页第二轮问询，并生成约 11 万字事实底稿。</li><li>最终产物：Markdown 新股研究报告，覆盖公司概况、IPO 进程、业务管线、财务、风险、问询重点和结论。</li></ul>
+<div class="mini-head">Harness 工程</div><p><code>ipo-review</code> 要固化版本选择、问询轮次识别、PDF 落盘、事实底稿、引用回溯、输出结构和超时复盘。</p></div>
     </div>
   </div>
-  <div class="foot"><div class="title">专业分析不能停在“总结一下”，它需要可追溯、可验证、可复用。</div><div>AI · WORK · HEALTH · LIFE</div></div>
+  <div class="foot"><div class="title">专业分析的价值，不是写得像，而是文件拿对、证据可查、流程可复用。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
-<section class="slide dark">
-  <div class="chrome"><div class="left"><span>10-16 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 10 / 28</div></div>
+<section class="slide dark tight-visual">
+  <div class="chrome"><div class="left"><span>11-17 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 11 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
     <h2 class="h-xl" data-anim>Vibe Coding：把感觉变成可验证迭代</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>Vibe Coding 不是让 AI 随便写，而是让人的意图通过快速迭代变成可验收结果。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">Vibe Coding 不是让 AI 随便写，而是让人的意图通过快速迭代变成可验收结果。</span></div>
-      </div>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>Vibe Coding 不是让 AI 随便写，而是让人的意图通过快速迭代变成可验收结果。</p>
+        <div class="loop-panel" data-anim><div class="module-card"><strong>人定方向</strong><span>判断价值、边界和最终取舍。</span></div><div class="module-card"><strong>AI 做试探</strong><span>生成方案、执行步骤、补足备选。</span></div><div class="module-card"><strong>系统留痕</strong><span>保存上下文、工具调用和验收记录。</span></div></div></div>
       <div class="body-zh slide-content" data-anim><table class="ppt-table"><thead><tr><th>人</th><th>AI</th><th>系统</th></tr></thead><tbody><tr><td>定方向</td><td>生成方案</td><td>保存上下文</td></tr><tr><td>设边界</td><td>执行步骤</td><td>调用工具</td></tr><tr><td>做判断</td><td>修正局部</td><td>留下记录</td></tr><tr><td>验收结果</td><td>提供备选</td><td>支持复盘</td></tr></tbody></table>
 <div class="mini-head">解释</div><p>所谓“感觉”，不是模糊要求，而是人对结果质量、语气、结构和边界的综合判断；工程化之后，它会变成可重复的迭代闭环。</p></div>
     </div>
   </div>
   <div class="foot"><div class="title">Vibe Coding 不是让 AI 随便写，而是让人的意图通过快速迭代变成可验收结果。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
-<section class="slide light">
-  <div class="chrome"><div class="left"><span>10-16 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 11 / 28</div></div>
+<section class="slide light layout-rebalance">
+  <div class="chrome"><div class="left"><span>11-17 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 12 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
     <h2 class="h-xl" data-anim>案例：这份 PPT 是如何做出来的</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>做 PPT 的目标不是生成页面，而是完成一次能讲、能读、能发布的内容交付。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">做 PPT 的目标不是生成页面，而是完成一次能讲、能读、能发布的内容交付。</span></div>
-      </div>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>做 PPT 的目标不是生成页面，而是完成一次能讲、能读、能发布的内容交付。</p></div>
       <div class="body-zh slide-content" data-anim><pre class="flow-code">主题定位
 → 演讲框架
 → 完整演讲稿
@@ -684,26 +730,48 @@
   </div>
   <div class="foot"><div class="title">做 PPT 的目标不是生成页面，而是完成一次能讲、能读、能发布的内容交付。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
-<section class="slide light">
-  <div class="chrome"><div class="left"><span>10-16 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 12 / 28</div></div>
+<section class="slide light layout-rebalance prompt-example">
+  <div class="chrome"><div class="left"><span>11-17 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 13 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
-    <h2 class="h-xl" data-anim>提示词不是文采，而是任务协议</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>好的提示词更像交接单，而不是漂亮话。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">好的提示词更像交接单，而不是漂亮话。</span></div>
-      </div>
-      <div class="body-zh slide-content" data-anim><table class="ppt-table"><thead><tr><th>要素</th><th>作用</th></tr></thead><tbody><tr><td>背景</td><td>让 AI 知道任务从哪里来</td></tr><tr><td>目标</td><td>明确最终交付物</td></tr><tr><td>约束</td><td>避免跑偏和过度发挥</td></tr><tr><td>输入</td><td>提供材料和上下文</td></tr><tr><td>输出</td><td>规定格式和粒度</td></tr><tr><td>验收</td><td>说明怎样算完成</td></tr></tbody></table>
-<div class="mini-head">解释</div><p>任务描述越像临时聊天，结果越靠猜；任务描述越像协议，AI 越容易进入工作状态。</p></div>
+    <h2 class="h-xl" data-anim>好的提示词不是一句漂亮请求，而是一份可以驱动交付的任务协议。</h2>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"></div>
+      <div class="body-zh slide-content" data-anim><pre class="flow-code">你是演讲内容策划 + 网页 PPT 设计助手。
+
+任务背景：
+我正在准备一场中文分享：
+“给 AI 装上方向盘，驶向 150 岁的松弛人生”。
+受众不是纯技术人，但需要保留技术比喻。
+
+目标：
+基于《演讲框架》和《完整演讲稿》，
+生成约 30 页 PPT 内容稿，并产出可发布的 HTML PPT。
+
+请按这个流程执行：
+1. 先梳理 6 个章节的叙事推进。
+2. 每页只保留一个核心判断。
+3. 把案例穿插进主线，而不是堆在结尾。
+4. 为每页写标题、正文、视觉建议和验收点。
+5. 生成后逐页检查重复、遮挡、页码和发布路径。
+
+约束：
+- 不要只列清单，要能独立阅读。
+- 不要照搬演讲稿，要提炼成 PPT 语言。
+- 保留 Vibe Coding 和 Harness Engineering 的技术比喻。
+
+输出：
+Markdown PPT 内容稿 + 可发布的 HTML PPT。</pre>
+<div class="prompt-note"><table class="ppt-table"><thead><tr><th>要素</th><th>作用</th></tr></thead><tbody><tr><td>背景</td><td>让 AI 知道任务从哪里来</td></tr><tr><td>目标</td><td>明确最终交付物</td></tr><tr><td>输入</td><td>提供材料和上下文</td></tr><tr><td>步骤</td><td>规定推进顺序</td></tr><tr><td>约束</td><td>避免跑偏和过度发挥</td></tr><tr><td>输出/验收</td><td>规定格式、粒度和完成标准</td></tr></tbody></table>
+<div class="mini-head">解释</div><p>这段 prompt 同时交代背景、目标、输入、步骤、约束、输出和验收。它不是让 AI “帮我做 PPT”，而是把一次内容交付编译成可执行流程。</p></div>
     </div>
   </div>
-  <div class="foot"><div class="title">好的提示词更像交接单，而不是漂亮话。</div><div>AI · WORK · HEALTH · LIFE</div></div>
+  <div class="foot"><div class="title">好的提示词不是一句漂亮请求，而是一份可以驱动交付的任务协议。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
 <section class="slide light">
-  <div class="chrome"><div class="left"><span>10-16 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 13 / 28</div></div>
+  <div class="chrome"><div class="left"><span>11-17 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 14 / 31</div></div>
   <div class="frame grid-2-6-6 slide-grid" style="padding-top:4.6vh;align-items:start">
     <div class="col slide-copy">
-      <h2 class="h-xl" data-anim>五步闭环：目标、上下文、执行、验证、复盘</h2>
+      <h2 class="h-xl" data-anim>Vibe Coding的五步闭环</h2>
       <p class="lead" data-anim>AI 提效的关键不在生成速度，而在闭环质量。</p>
       <div class="body-zh slide-content" data-anim><pre class="flow-code">目标：定义交付物和成功标准
 上下文：准备材料、历史、约束、偏好
@@ -712,51 +780,45 @@
 复盘：把经验沉淀成模板、技能或系统</pre>
 <div class="mini-head">解释</div><p>没有验证，速度会放大错误；没有复盘，提效不会留下复利。</p></div>
     </div>
-    <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim>
-      <img src="images/13-vibe-loop.png" alt="五步闭环：目标、上下文、执行、验证、复盘">
-    </figure>
+    <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim><img src="images/13-vibe-loop.png" alt="Vibe Coding的五步闭环"></figure>
   </div>
   <div class="foot"><div class="title">AI 提效的关键不在生成速度，而在闭环质量。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
 <section class="slide dark">
-  <div class="chrome"><div class="left"><span>10-16 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 14 / 28</div></div>
+  <div class="chrome"><div class="left"><span>11-17 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 15 / 31</div></div>
   <div class="frame grid-2-6-6 slide-grid" style="padding-top:4.6vh;align-items:start">
     <div class="col slide-copy">
       <h2 class="h-xl" data-anim>Harness Engineering：给 Agent 搭驾驶舱</h2>
-      <p class="lead" data-anim>Agent-first 的关键不是只换更强模型，而是为 Agent 建立能工作的环境。</p>
+      <p class="lead" data-anim>关键不只是换更强模型，而是为 Agent 建立能工作的环境。</p>
       <div class="body-zh slide-content" data-anim><ul class="clean-list"><li>上下文：让 Agent 读到正确材料。</li><li>工具：让 Agent 能访问代码、文件、浏览器和命令。</li><li>权限：规定什么能自动做，什么必须人工确认。</li><li>约束：把风格、格式、边界写清楚。</li><li>日志：保留执行过程和可追溯记录。</li><li>验证：用测试、检查和人工审查收口。</li></ul>
 <div class="mini-head">引用</div><p>OpenAI Engineering Blog, “Harness engineering: leveraging Codex in an agent-first world”, 2025.</p></div>
     </div>
-    <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim>
-      <img src="images/14-harness.png" alt="Harness Engineering：给 Agent 搭驾驶舱">
-    </figure>
+    <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim><img src="images/14-harness.png" alt="Harness Engineering：给 Agent 搭驾驶舱"></figure>
   </div>
-  <div class="foot"><div class="title">Agent-first 的关键不是只换更强模型，而是为 Agent 建立能工作的环境。</div><div>AI · WORK · HEALTH · LIFE</div></div>
+  <div class="foot"><div class="title">关键不只是换更强模型，而是为 Agent 建立能工作的环境。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
-<section class="slide light">
-  <div class="chrome"><div class="left"><span>10-16 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 15 / 28</div></div>
+<section class="slide light visual-balance">
+  <div class="chrome"><div class="left"><span>11-17 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 16 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
-    <h2 class="h-xl" data-anim>“感觉对了”还不够，要能证明</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>AI 产物经常看起来完整，但可靠性来自证据链。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">AI 产物经常看起来完整，但可靠性来自证据链。</span></div>
-      </div>
+    <h2 class="h-xl" data-anim>感觉对 ≠ 真的对</h2>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>AI 产物经常看起来完整，但可靠性来自证据链。</p>
+        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">把“看起来对”，变成“可以证明对”。</span></div>
+        <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim><img src="images/16-evidence-chain.png" alt="感觉对不等于真的对"></figure></div>
       <div class="body-zh slide-content" data-anim><table class="ppt-table"><thead><tr><th>看起来对</th><th>可以证明对</th></tr></thead><tbody><tr><td>语言流畅</td><td>引用可追溯</td></tr><tr><td>结构完整</td><td>数字可核对</td></tr><tr><td>方案合理</td><td>约束被满足</td></tr><tr><td>页面漂亮</td><td>交付路径可打开</td></tr></tbody></table>
-<div class="mini-head">解释</div><p>Vibe Coding 的速度来自快速试错，Harness Engineering 的价值是把试错变成可审查的轨迹。</p></div>
+<div class="mini-head">解释</div><p>真正的验收不是“我觉得不错”，而是能拿出证据：引用能追溯、数字能核对、约束被满足、交付路径能打开。AI 越会包装半成品，人越要把验收标准前置。</p></div>
     </div>
   </div>
-  <div class="foot"><div class="title">AI 产物经常看起来完整，但可靠性来自证据链。</div><div>AI · WORK · HEALTH · LIFE</div></div>
+  <div class="foot"><div class="title">把“看起来对”，变成“可以证明对”。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
-<section class="slide dark">
-  <div class="chrome"><div class="left"><span>10-16 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 16 / 28</div></div>
+<section class="slide dark visual-balance">
+  <div class="chrome"><div class="left"><span>11-17 · 驾驶舱工程</span><span class="sep"></span></div><div class="right">Vol.150 · 17 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
-    <h2 class="h-xl" data-anim>快，也可能是假快</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>没有纪律的快，会把错误扩散到更多页面、更多代码和更多决策里。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">速度不是目标，可控的速度才是能力。</span></div>
-      </div>
+    <h2 class="h-xl" data-anim>快 ≠ 真快</h2>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>没有纪律的快，会把错误扩散到更多页面、更多代码和更多决策里。</p>
+        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">速度不是目标，可控的速度才是能力。</span></div>
+        <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim><img src="images/17-controlled-speed.png" alt="快不等于真快"></figure></div>
       <div class="body-zh slide-content" data-anim><p>AI 一次能改很多文件、写很多文案、生成很多方案。诱惑在于“马上有结果”，风险在于需求没说清、上下文给错、一次改太大，返工也会同步放大。</p>
 <p>越快，越要小步；越自动，越要留痕；模型越自信，人越不能放弃最后审查权。</p>
 <div class="mini-head">原则</div><p>速度不是目标，可控的速度才是能力。</p></div>
@@ -764,38 +826,99 @@
   </div>
   <div class="foot"><div class="title">没有纪律的快，会把错误扩散到更多页面、更多代码和更多决策里。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
+<section class="slide dark">
+  <div class="chrome"><div class="left"><span>18-21 · Harness 实战</span><span class="sep"></span></div><div class="right">Vol.150 · 18 / 31</div></div>
+  <div class="frame grid-2-6-6 slide-grid" style="padding-top:4.6vh;align-items:start">
+    <div class="col slide-copy">
+      <h2 class="h-xl" data-anim>我的实践：从工具到任务平台</h2>
+      <p class="lead" data-anim>产品化的本质，是把个人跑通的流程变成别人也能使用的系统。</p>
+      <div class="body-zh slide-content" data-anim><pre class="flow-code">TapSay：把临时想法变成可用输入
+SemiCrab：把复杂任务变成可恢复、可复盘的任务系统
+	Semibot：把智能体能力变成本地优先、多入口、可审批的工作台</pre></div>
+    </div>
+    <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim><img src="images/18-products-harness.png" alt="我的实践：从工具到任务平台"></figure>
+  </div>
+  <div class="foot"><div class="title">从工具，到任务系统，再到智能体工作台。</div><div>AI · WORK · HEALTH · LIFE</div></div>
+</section>
 <section class="slide light">
-  <div class="chrome"><div class="left"><span>17-19 · 生活范式</span><span class="sep"></span></div><div class="right">Vol.150 · 17 / 28</div></div>
+  <div class="chrome"><div class="left"><span>18-21 · Harness 实战</span><span class="sep"></span></div><div class="right">Vol.150 · 19 / 31</div></div>
+  <div class="frame" style="padding-top:4.8vh">
+    <h2 class="h-xl" data-anim>案例：TapSay，把临时想法变成可用输入</h2>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>很多提效不是发生在 AI 输出端，而是发生在人向 AI 表达的入口处。</p>
+        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">入口顺了，工作流才有机会真的发生。</span></div></div>
+      <div class="body-zh slide-content" data-anim><div class="mini-head">Vibe Coding 流程</div><pre class="flow-code">口语输入
+→ 语音转写
+→ 识别上下文
+→ 润色为 prompt / 正式文本
+→ 插入当前光标
+→ 历史复用</pre>
+<div class="mini-head">Harness 工程</div><ul class="clean-list"><li>快捷键和光标位置，降低启动成本。</li><li>ASR、润色模式、词典和历史记录，保证输出可用。</li><li>剪贴板兜底，保证不同软件都能接住结果。</li></ul>
+<div class="mini-head">解释</div><p>TapSay 的核心不是语音识别，而是把人的临时想法编译成软件和 AI 都能使用的输入。它解决的是 AI 工作流最前面的摩擦。</p></div>
+    </div>
+  </div>
+  <div class="foot"><div class="title">入口顺了，工作流才有机会真的发生。</div><div>AI · WORK · HEALTH · LIFE</div></div>
+</section>
+<section class="slide light layout-rebalance">
+  <div class="chrome"><div class="left"><span>18-21 · Harness 实战</span><span class="sep"></span></div><div class="right">Vol.150 · 20 / 31</div></div>
+  <div class="frame" style="padding-top:4.8vh">
+    <h2 class="h-xl" data-anim>案例：SemiCrab 任务 Harness</h2>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>SemiCrab 的价值，不是多一个聊天框，而是让复杂任务有对象、有计划、有状态、有结果。</p>
+        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">任务产品的关键，是让复杂任务稳定跑完。</span></div></div>
+      <div class="body-zh slide-content" data-anim><div class="mini-head">产品特点</div>
+<ul class="clean-list"><li>面向终端用户的多智能体任务产品，而不是企业控制面。</li><li>核心对象收敛为 Agent、Session、Task、Result、History。</li><li>runtime v2 采用 fixed-plan、no-replan、Plan-Act。</li><li>内部支持任务恢复、审批、流式事件、Agent Factory 和 MCP 接入。</li></ul>
+<div class="mini-head">项目规模</div>
+<table class="ppt-table"><thead><tr><th>指标</th><th>数量</th></tr></thead><tbody><tr><td>Git 跟踪文件</td><td>927</td></tr><tr><td>代码/文档配置文件</td><td>794</td></tr><tr><td>代码文件</td><td>713</td></tr><tr><td>代码行数</td><td>约 13.2 万行</td></tr></tbody></table>
+<div class="mini-head">解释</div><p>SemiCrab 展示的是任务层 Harness：用户看到的是任务和结果，系统内部负责计划、执行、恢复、审批和沉淀。复杂度留在系统里，而不是甩给用户。</p></div>
+    </div>
+  </div>
+  <div class="foot"><div class="title">任务产品的关键，是让复杂任务稳定跑完。</div><div>AI · WORK · HEALTH · LIFE</div></div>
+</section>
+<section class="slide dark layout-rebalance">
+  <div class="chrome"><div class="left"><span>18-21 · Harness 实战</span><span class="sep"></span></div><div class="right">Vol.150 · 21 / 31</div></div>
+  <div class="frame" style="padding-top:4.8vh">
+    <h2 class="h-xl" data-anim>案例：Semibot 工作台 Harness</h2>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>Semibot 把 Agent 放进真实工作环境：本地运行、多入口、工具调用、审批留痕。</p>
+        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">真正的 Agent 产品，要能进入真实工作环境。</span></div></div>
+      <div class="body-zh slide-content" data-anim><div class="mini-head">产品特点</div>
+<ul class="clean-list"><li>Local-first、可安装，不是托管黑盒。</li><li>Web UI、CLI、API、Python runtime 组成一体化栈。</li><li>runtime 基于 LangGraph，支持 MCP、多模型、memory/checkpoint、audit logging。</li><li>同一套助手可进入 Web UI、Telegram、飞书等多入口。</li><li>高风险动作通过 approval gates 进入人工确认。</li></ul>
+<div class="mini-head">项目规模</div>
+<table class="ppt-table"><thead><tr><th>指标</th><th>数量</th></tr></thead><tbody><tr><td>Git 跟踪文件</td><td>2,310</td></tr><tr><td>代码/文档配置文件</td><td>1,849</td></tr><tr><td>代码文件</td><td>1,033</td></tr><tr><td>代码行数</td><td>约 25.9 万行</td></tr></tbody></table>
+<div class="mini-head">解释</div><p>Semibot 展示的是工作台级 Harness：不是让 Agent 在聊天框里自由发挥，而是给它工具、权限、入口、日志、审批和恢复机制。</p></div>
+    </div>
+  </div>
+  <div class="foot"><div class="title">真正的 Agent 产品，要能进入真实工作环境。</div><div>AI · WORK · HEALTH · LIFE</div></div>
+</section>
+<section class="slide light visual-balance">
+  <div class="chrome"><div class="left"><span>22-24 · 生活范式</span><span class="sep"></span></div><div class="right">Vol.150 · 22 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
     <h2 class="h-xl" data-anim>方法论迁移：从代码到知识工作</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>Vibe Coding 不只适用于写代码，它可以迁移到研究、写作、分析和决策。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">Vibe Coding 不只适用于写代码，它可以迁移到研究、写作、分析和决策。</span></div>
-      </div>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>Vibe Coding 不只适用于写代码，它可以迁移到研究、写作、分析和决策。</p>
+        <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim><img src="images/22-method-transfer.png" alt="方法论迁移：从代码到知识工作"></figure></div>
       <div class="body-zh slide-content" data-anim><ul class="clean-list"><li>写作：从标题到大纲，从段落到校对，从风格到发布。</li><li>研究：从材料收集到观点提炼，从证据核对到报告输出。</li><li>投资：从招股书阅读到指标拆解，从风险问题到技能沉淀。</li><li>管理：从目标拆解到任务跟进，从进度记录到复盘改进。</li></ul>
 <div class="mini-head">解释</div><p>同一套闭环可以处理不同领域：先定义交付，再搭上下文，再分步执行，最后验证和沉淀。</p></div>
     </div>
   </div>
   <div class="foot"><div class="title">Vibe Coding 不只适用于写代码，它可以迁移到研究、写作、分析和决策。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
-<section class="slide light">
-  <div class="chrome"><div class="left"><span>17-19 · 生活范式</span><span class="sep"></span></div><div class="right">Vol.150 · 18 / 28</div></div>
+<section class="slide light tight-visual">
+  <div class="chrome"><div class="left"><span>22-24 · 生活范式</span><span class="sep"></span></div><div class="right">Vol.150 · 23 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
     <h2 class="h-xl" data-anim>个人工作台：让 AI 记住你的工作方式</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>个人效率的下一步，不是多装工具，而是建立自己的 AI 工作台。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">个人效率的下一步，不是多装工具，而是建立自己的 AI 工作台。</span></div>
-      </div>
-      <div class="body-zh slide-content" data-anim><ul class="clean-list"><li>知识库：个人资料、业务背景、常用表达、历史项目。</li><li>模板库：报告、邮件、评审、复盘、方案。</li><li>技能库：IPO 分析、PPT 生成、代码审查、产品调研。</li><li>项目库：正在做什么、做到哪一步、下一步是什么。</li><li>日志库：哪些流程跑通了，哪些地方需要调整。</li></ul>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>个人效率的下一步，不是多装工具，而是建立自己的 AI 工作台。</p>
+        <div class="callout" style="margin-top:1.4vh" data-anim><span class="q-big">让 AI 接入你的资料、偏好、项目和历史。</span></div></div>
+      <div class="body-zh slide-content" data-anim><div class="module-grid"><div class="module-card"><strong>知识库</strong><span>个人资料、业务背景、常用表达、历史项目。</span></div><div class="module-card"><strong>模板库</strong><span>报告、邮件、评审、复盘、方案。</span></div><div class="module-card"><strong>技能库</strong><span>IPO 分析、PPT 生成、代码审查、产品调研。</span></div><div class="module-card"><strong>项目库</strong><span>正在做什么、做到哪一步、下一步是什么。</span></div><div class="module-card"><strong>日志库</strong><span>哪些流程跑通了，哪些地方需要调整。</span></div><div class="module-card"><strong>边界库</strong><span>哪些可自动执行，哪些必须人工确认。</span></div></div>
 <div class="mini-head">解释</div><p>AI 只有接入你的工作环境，才会从外部工具变成长期伙伴。</p></div>
     </div>
   </div>
   <div class="foot"><div class="title">个人效率的下一步，不是多装工具，而是建立自己的 AI 工作台。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
 <section class="slide light">
-  <div class="chrome"><div class="left"><span>17-19 · 生活范式</span><span class="sep"></span></div><div class="right">Vol.150 · 19 / 28</div></div>
+  <div class="chrome"><div class="left"><span>22-24 · 生活范式</span><span class="sep"></span></div><div class="right">Vol.150 · 24 / 31</div></div>
   <div class="frame grid-2-6-6 slide-grid" style="padding-top:4.6vh;align-items:start">
     <div class="col slide-copy">
       <h2 class="h-xl" data-anim>构建 150 岁健康人生系统</h2>
@@ -803,21 +926,17 @@
       <div class="body-zh slide-content" data-anim><ul class="clean-list"><li>饮食：把入口当成长期变量，关注总热量、蛋白质、蔬果、加工食品和饮酒。</li><li>睡眠：把恢复当成系统维护，记录时长、规律性、醒后状态和压力来源。</li><li>运动：把身体当成长期资产，兼顾有氧、力量、灵活性和日常活动量。</li><li>补剂：把保健品当成需验证的变量，避免“越多越好”，优先关注体检和医生建议。</li><li>精神状态：把情绪、关系、成就感和压力水平放进同一张仪表盘。</li></ul>
 <div class="mini-head">解释</div><p>健康不是一次性项目，而是长期运行的系统。目标不是追求完美，而是让身体、工作和生活可以被持续维护。</p></div>
     </div>
-    <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim>
-      <img src="images/19-health.png" alt="构建 150 岁健康人生系统">
-    </figure>
+    <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim><img src="images/19-health.png" alt="构建 150 岁健康人生系统"></figure>
   </div>
   <div class="foot"><div class="title">150 岁不是预测，而是一个倒逼长期主义的思维实验。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
-<section class="slide light">
-  <div class="chrome"><div class="left"><span>20-26 · 业务接入</span><span class="sep"></span></div><div class="right">Vol.150 · 20 / 28</div></div>
+<section class="slide light visual-balance">
+  <div class="chrome"><div class="left"><span>25-28 · 业务接入</span><span class="sep"></span></div><div class="right">Vol.150 · 25 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
     <h2 class="h-xl" data-anim>从个人提效到业务接入</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>AI 进入业务，不是把聊天框放进产品，而是重构业务链路。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">AI 进入业务，不是把聊天框放进产品，而是重构业务链路。</span></div>
-      </div>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>AI 进入业务，不是把聊天框放进产品，而是重构业务链路。</p>
+        <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim><img src="images/25-business-loop.png" alt="从个人提效到业务接入"></figure></div>
       <div class="body-zh slide-content" data-anim><table class="ppt-table"><thead><tr><th>层级</th><th>关注点</th><th>典型问题</th></tr></thead><tbody><tr><td>个人效率</td><td>我能不能更快完成</td><td>有无模板和工作台</td></tr><tr><td>团队流程</td><td>多人如何协作</td><td>有无权限、日志和交接</td></tr><tr><td>业务系统</td><td>AI 是否进入核心链路</td><td>有无质量、成本和风险控制</td></tr></tbody></table>
 <div class="mini-head">解释</div><p>真正的业务接入，要求 AI 能进入输入、处理、验证、交付和反馈全过程。</p></div>
     </div>
@@ -825,14 +944,11 @@
   <div class="foot"><div class="title">AI 进入业务，不是把聊天框放进产品，而是重构业务链路。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
 <section class="slide light">
-  <div class="chrome"><div class="left"><span>20-26 · 业务接入</span><span class="sep"></span></div><div class="right">Vol.150 · 21 / 28</div></div>
+  <div class="chrome"><div class="left"><span>25-28 · 业务接入</span><span class="sep"></span></div><div class="right">Vol.150 · 26 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
     <h2 class="h-xl" data-anim>业务闭环：输入、处理、交付、反馈</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>业务中的 AI 不能只看“生成了什么”，还要看它处在闭环的哪个位置。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">业务中的 AI 不能只看“生成了什么”，还要看它处在闭环的哪个位置。</span></div>
-      </div>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>业务中的 AI 不能只看“生成了什么”，还要看它处在闭环的哪个位置。</p></div>
       <div class="body-zh slide-content" data-anim><pre class="flow-code">输入：客户需求、数据、文档、行为记录
 处理：分析、生成、检索、调用工具
 交付：报告、页面、任务结果、产品功能
@@ -843,14 +959,12 @@
   <div class="foot"><div class="title">业务中的 AI 不能只看“生成了什么”，还要看它处在闭环的哪个位置。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
 <section class="slide dark">
-  <div class="chrome"><div class="left"><span>20-26 · 业务接入</span><span class="sep"></span></div><div class="right">Vol.150 · 22 / 28</div></div>
+  <div class="chrome"><div class="left"><span>25-28 · 业务接入</span><span class="sep"></span></div><div class="right">Vol.150 · 27 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
-    <h2 class="h-xl" data-anim>人机协作不是替代，而是分工重组</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>AI 改变的不是“谁更重要”，而是每个人在链路里的位置。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">AI 改变的不是“谁更重要”，而是每个人在链路里的位置。</span></div>
-      </div>
+    <h2 class="h-xl" data-anim>人机协作，不是替代人类</h2>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>AI 改变的不是“谁更重要”，而是每个人在链路里的位置。</p>
+        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">人不该把判断外包给 AI，也不该把重复劳动全部留给自己。</span></div></div>
       <div class="body-zh slide-content" data-anim><table class="ppt-table"><thead><tr><th>人更适合</th><th>Agent 更适合</th></tr></thead><tbody><tr><td>定目标</td><td>批量生成</td></tr><tr><td>做取舍</td><td>检索整理</td></tr><tr><td>判断风险</td><td>执行重复步骤</td></tr><tr><td>负责结果</td><td>保留过程记录</td></tr></tbody></table>
 <div class="mini-head">解释</div><p>人不该把判断外包给 AI，也不该把重复劳动全部留给自己。合理分工，才是效率和质量同时提升的基础。</p></div>
     </div>
@@ -858,81 +972,25 @@
   <div class="foot"><div class="title">AI 改变的不是“谁更重要”，而是每个人在链路里的位置。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
 <section class="slide light">
-  <div class="chrome"><div class="left"><span>20-26 · 业务接入</span><span class="sep"></span></div><div class="right">Vol.150 · 23 / 28</div></div>
+  <div class="chrome"><div class="left"><span>25-28 · 业务接入</span><span class="sep"></span></div><div class="right">Vol.150 · 28 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
-    <h2 class="h-xl" data-anim>趋势不是答案，而是假设</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>面对 AI 变化，最危险的不是看不见趋势，而是把趋势当结论。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">面对 AI 变化，最危险的不是看不见趋势，而是把趋势当结论。</span></div>
-      </div>
+    <h2 class="h-xl" data-anim>趋势 ≠ 答案</h2>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>面对 AI 变化，最危险的不是看不见趋势，而是把趋势当结论。</p>
+        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">趋势用来提出假设，业务用来验证假设。</span></div></div>
       <div class="body-zh slide-content" data-anim><ul class="clean-list"><li>趋势：模型能力越来越强。 验证：哪些任务真的能稳定交付？</li><li>趋势：Agent 会进入更多流程。 验证：哪些环节有日志、权限和验收？</li><li>趋势：人人都能做产品。 验证：是否解决真实痛点，能否持续维护？</li></ul>
 <div class="mini-head">解释</div><p>趋势用来提出假设，业务用来验证假设。AI 时代更需要实验，而不是只需要判断。</p></div>
     </div>
   </div>
   <div class="foot"><div class="title">面对 AI 变化，最危险的不是看不见趋势，而是把趋势当结论。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
-<section class="slide light">
-  <div class="chrome"><div class="left"><span>20-26 · 业务接入</span><span class="sep"></span></div><div class="right">Vol.150 · 24 / 28</div></div>
-  <div class="frame grid-2-6-6 slide-grid" style="padding-top:4.6vh;align-items:start">
-    <div class="col slide-copy">
-      <h2 class="h-xl" data-anim>产品链路：从工具到任务平台</h2>
-      <p class="lead" data-anim>产品化的本质，是把个人跑通的流程变成别人也能使用的系统。</p>
-      <div class="body-zh slide-content" data-anim><pre class="flow-code">TapSay：解决输入效率
-SemiCrab：解决任务执行
-Semibot：解决任务平台化</pre>
-<div class="mini-head">解释</div><p>这三类产品对应同一条升级路径：先降低个人摩擦，再稳定任务流程，最后把流程开放成平台能力。</p></div>
-    </div>
-    <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim>
-      <img src="images/24-products.png" alt="产品链路：从工具到任务平台">
-    </figure>
-  </div>
-  <div class="foot"><div class="title">产品化的本质，是把个人跑通的流程变成别人也能使用的系统。</div><div>AI · WORK · HEALTH · LIFE</div></div>
-</section>
-<section class="slide light">
-  <div class="chrome"><div class="left"><span>20-26 · 业务接入</span><span class="sep"></span></div><div class="right">Vol.150 · 25 / 28</div></div>
-  <div class="frame" style="padding-top:4.8vh">
-    <h2 class="h-xl" data-anim>案例：TapSay，把临时想法变成可用输入</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>很多提效不是发生在 AI 输出端，而是发生在人向 AI 表达的入口处。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">很多提效不是发生在 AI 输出端，而是发生在人向 AI 表达的入口处。</span></div>
-      </div>
-      <div class="body-zh slide-content" data-anim><div class="mini-head">Vibe Coding 流程</div><pre class="flow-code">口语输入
-→ 语音转写
-→ 识别上下文
-→ 润色为 prompt / 正式文本
-→ 插入当前光标
-→ 历史复用</pre>
-<div class="mini-head">Harness 工程</div><ul class="clean-list"><li>快捷键和光标位置，降低启动成本。</li><li>ASR、润色模式、词典和历史记录，保证输出可用。</li><li>剪贴板兜底，保证不同软件都能接住结果。</li></ul>
-<div class="mini-head">解释</div><p>TapSay 的核心不是语音识别，而是把人的临时想法编译成软件和 AI 都能使用的输入。</p></div>
-    </div>
-  </div>
-  <div class="foot"><div class="title">很多提效不是发生在 AI 输出端，而是发生在人向 AI 表达的入口处。</div><div>AI · WORK · HEALTH · LIFE</div></div>
-</section>
-<section class="slide light">
-  <div class="chrome"><div class="left"><span>20-26 · 业务接入</span><span class="sep"></span></div><div class="right">Vol.150 · 26 / 28</div></div>
-  <div class="frame" style="padding-top:4.8vh">
-    <h2 class="h-xl" data-anim>案例：SemiCrab 与 Semibot，把任务变成系统</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>当任务变复杂，产品就必须从“生成结果”升级为“管理过程”。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">当任务变复杂，产品就必须从“生成结果”升级为“管理过程”。</span></div>
-      </div>
-      <div class="body-zh slide-content" data-anim><div class="mini-head">解释</div><p>SemiCrab 解决“任务如何稳定执行”，Semibot 解决“任务能力如何被更多人、更复杂场景调用”。</p></div>
-    </div>
-  </div>
-  <div class="foot"><div class="title">当任务变复杂，产品就必须从“生成结果”升级为“管理过程”。</div><div>AI · WORK · HEALTH · LIFE</div></div>
-</section>
-<section class="slide dark">
-  <div class="chrome"><div class="left"><span>27-28 · 走向长期主义</span><span class="sep"></span></div><div class="right">Vol.150 · 27 / 28</div></div>
+<section class="slide dark visual-balance visual-tall">
+  <div class="chrome"><div class="left"><span>29-31 · 走向长期主义</span><span class="sep"></span></div><div class="right">Vol.150 · 29 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
     <h2 class="h-xl" data-anim>长期主义：把每一次使用变成资产</h2>
-    <div class="grid-2-7-5 slide-grid" style="margin-top:4.8vh;align-items:start">
-      <div class="slide-copy">
-        <p class="lead" data-anim>AI 的真正复利，不是一次快，而是每次使用都让系统变强一点。</p>
-        <div class="callout" style="margin-top:3.6vh" data-anim><span class="q-big">AI 的真正复利，不是一次快，而是每次使用都让系统变强一点。</span></div>
-      </div>
+    <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
+      <div class="slide-copy"><p class="lead" data-anim>AI 的真正复利，不是一次快，而是每次使用都让系统变强一点。</p>
+        <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim><img src="images/29-longterm-assets.png" alt="长期主义：把每一次使用变成资产"></figure></div>
       <div class="body-zh slide-content" data-anim><ul class="clean-list"><li>文档资产：框架、报告、模板、README、案例库。</li><li>流程资产：提示词协议、检查清单、自动化脚本、发布路径。</li><li>判断资产：哪些能交给 AI，哪些必须人工负责，哪些需要专业边界。</li></ul>
 <div class="mini-head">解释</div><p>一次使用如果没有沉淀，只是消费模型能力；一次使用如果留下模板、技能或系统，就是在建设自己的长期能力。</p></div>
     </div>
@@ -940,10 +998,10 @@ Semibot：解决任务平台化</pre>
   <div class="foot"><div class="title">AI 的真正复利，不是一次快，而是每次使用都让系统变强一点。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
 <section class="slide light">
-  <div class="chrome"><div class="left"><span>27-28 · 走向长期主义</span><span class="sep"></span></div><div class="right">Vol.150 · 28 / 28</div></div>
+  <div class="chrome"><div class="left"><span>29-31 · 走向长期主义</span><span class="sep"></span></div><div class="right">Vol.150 · 30 / 31</div></div>
   <div class="frame grid-2-6-6 slide-grid" style="padding-top:4.6vh;align-items:start">
     <div class="col slide-copy">
-      <h2 class="h-xl" data-anim>150 岁松弛人生：给未来留出可维护空间</h2>
+      <h2 class="h-xl" data-anim>150 岁 ≠ 年龄承诺</h2>
       <p class="lead" data-anim>150 岁不是年龄承诺，而是用更长时间尺度重新设计工作、健康和成长。</p>
       <div class="body-zh slide-content" data-anim><pre class="flow-code">给 AI 装上方向盘
 给任务装上流程
@@ -951,11 +1009,17 @@ Semibot：解决任务平台化</pre>
 给健康装上仪表盘
 给人生装上长期主义</pre></div>
     </div>
-    <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim>
-      <img src="images/28-longlife.png" alt="150 岁松弛人生：给未来留出可维护空间">
-    </figure>
+    <figure class="frame-img r-16x10 fit-contain slide-figure" data-anim><img src="images/28-longlife.png" alt="150 岁 ≠ 年龄承诺"></figure>
   </div>
   <div class="foot"><div class="title">AI 时代最值得追求的，不是每天更忙一点，也不是把自己交给机器，而是把更多事情放进可靠系统里，让人有空间做判断、做选择、做长期建设。</div><div>AI · WORK · HEALTH · LIFE</div></div>
+</section>
+<section class="slide dark thank-you">
+  <div class="chrome"><div class="left"><span>29-31 · 走向长期主义</span><span class="sep"></span></div><div class="right">Vol.150 · 31 / 31</div></div>
+  <div class="frame" style="padding-top:8vh">
+    <h2 class="h-xl" data-anim>Thank you</h2>
+    <p class="lead credit" data-anim>此 slides 由 Codex + imagegen + html-ppt skill 联合制作</p>
+  </div>
+  <div class="foot"><div class="title">此 slides 由 Codex + imagegen + html-ppt skill 联合制作</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
 </div>
 
