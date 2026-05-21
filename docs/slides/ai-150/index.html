@@ -256,6 +256,27 @@
   .thank-you .lead{font-size:clamp(26px,2vw,42px);line-height:1.35;max-width:78vw;margin-top:2.4vh}
   .thank-you .credit{font-size:clamp(18px,1.25vw,26px);line-height:1.45;opacity:.82}
   .thank-you .module-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:6vh}
+  .thank-you .link-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2vw;margin-top:6vh;max-width:82vw}
+  .thank-you .link-card{display:block;text-decoration:none;color:inherit;border-top:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.055);padding:1.65vh 1.25vw;transition:background .2s ease,transform .2s ease}
+  .thank-you .link-card:hover{background:rgba(255,255,255,.09);transform:translateY(-2px)}
+  .thank-you .link-card strong{display:block;font-family:var(--serif-en);font-size:clamp(22px,1.6vw,36px);line-height:1.1}
+  .thank-you .link-card span{display:block;margin-top:.75vh;font-family:var(--mono);font-size:clamp(10px,.7vw,14px);letter-spacing:.05em;opacity:.72;word-break:break-all}
+  .slide.semibot-case .grid-2-7-5{grid-template-columns:5.2fr 6.8fr;gap:2.8vw;min-height:0}
+  .slide.semibot-case .frame{padding-top:3.6vh!important}
+  .slide.semibot-case .frame > .h-xl{font-size:clamp(42px,4.35vw,86px);line-height:1.04;max-width:92vw}
+  .slide.semibot-case .slide-copy .lead{font-size:clamp(19px,1.32vw,28px);line-height:1.4;margin-top:1.6vh}
+  .slide.semibot-case .callout{margin-top:2vh!important;padding:1.7vh 1.6vw}
+  .slide.semibot-case .q-big{font-size:clamp(20px,1.5vw,31px);line-height:1.32}
+  .slide.semibot-case .slide-content{column-count:initial;font-size:clamp(12px,.86vw,17px);line-height:1.42}
+  .slide.semibot-case .clean-list{gap:.68vh}
+  .slide.semibot-case .product-shot{margin-top:0;max-height:41vh;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08)}
+  .slide.semibot-case .product-shot > img{object-fit:cover;object-position:center center}
+  .slide.semibot-case .ppt-table{font-size:clamp(10px,.72vw,14px);line-height:1.24;margin-top:.8vh}
+  .slide.semibot-case .ppt-table th,.slide.semibot-case .ppt-table td{padding:.62vh .7vw}
+  .slide.semibot-case .metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7vw;margin-top:.8vh}
+  .slide.semibot-case .metric{border-top:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.04);padding:.9vh .75vw}
+  .slide.semibot-case .metric strong{display:block;font-family:var(--serif-en);font-size:clamp(17px,1.05vw,24px);line-height:1.1}
+  .slide.semibot-case .metric span{display:block;margin-top:.3vh;font-size:clamp(9px,.62vw,12px);opacity:.62;line-height:1.25}
 
   /* ============ 导航 ============ */
   #nav{position:fixed;left:50%;bottom:2.6vh;transform:translateX(-50%);z-index:30;display:flex;gap:10px;padding:8px 14px;border-radius:999px;background:rgba(0,0,0,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
@@ -875,18 +896,19 @@ SemiCrab：把复杂任务变成可恢复、可复盘的任务系统
   </div>
   <div class="foot"><div class="title">任务产品的关键，是让复杂任务稳定跑完。</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
-<section class="slide dark layout-rebalance">
+<section class="slide dark semibot-case">
   <div class="chrome"><div class="left"><span>18-21 · Harness 实战</span><span class="sep"></span></div><div class="right">Vol.150 · 21 / 31</div></div>
   <div class="frame" style="padding-top:4.8vh">
     <h2 class="h-xl" data-anim>案例：Semibot 工作台 Harness</h2>
     <div class="grid-2-7-5 slide-grid" style="margin-top:4.4vh;align-items:start">
       <div class="slide-copy"><p class="lead" data-anim>Semibot 把 Agent 放进真实工作环境：本地运行、多入口、工具调用、审批留痕。</p>
-        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">真正的 Agent 产品，要能进入真实工作环境。</span></div></div>
-      <div class="body-zh slide-content" data-anim><div class="mini-head">产品特点</div>
-<ul class="clean-list"><li>Local-first、可安装，不是托管黑盒。</li><li>Web UI、CLI、API、Python runtime 组成一体化栈。</li><li>runtime 基于 LangGraph，支持 MCP、多模型、memory/checkpoint、audit logging。</li><li>同一套助手可进入 Web UI、Telegram、飞书等多入口。</li><li>高风险动作通过 approval gates 进入人工确认。</li></ul>
+        <div class="callout" style="margin-top:3.2vh" data-anim><span class="q-big">真正的 Agent 产品，要能进入真实工作环境。</span></div>
+        <div class="body-zh slide-content" data-anim><div class="mini-head">产品特点</div>
+<ul class="clean-list"><li>装在电脑里的通用智能体，定位不是聊天框，而是能干活、能提醒、能协作、能自我成长。</li><li>覆盖调研、内容产出、文件与批量任务、电脑/浏览器操作、长任务跟进和协作场景。</li><li>分层路由：简单问题直接答，复杂任务进入 Agent Studio / 计划执行。</li><li>工具链优先接入本地 CLI、文件、浏览器和多入口；高风险动作进入人工确认。</li></ul></div></div>
+      <div class="body-zh slide-content" data-anim><figure class="frame-img r-16x10 fit-contain product-shot" data-anim><img src="images/21-semibot-home.png" alt="Semibot 官网产品截图"></figure>
 <div class="mini-head">项目规模</div>
-<table class="ppt-table"><thead><tr><th>指标</th><th>数量</th></tr></thead><tbody><tr><td>Git 跟踪文件</td><td>2,310</td></tr><tr><td>代码/文档配置文件</td><td>1,849</td></tr><tr><td>代码文件</td><td>1,033</td></tr><tr><td>代码行数</td><td>约 25.9 万行</td></tr></tbody></table>
-<div class="mini-head">解释</div><p>Semibot 展示的是工作台级 Harness：不是让 Agent 在聊天框里自由发挥，而是给它工具、权限、入口、日志、审批和恢复机制。</p></div>
+<div class="metric-grid"><div class="metric"><strong>2,310</strong><span>Git 跟踪文件</span></div><div class="metric"><strong>1,849</strong><span>代码/文档配置</span></div><div class="metric"><strong>1,033</strong><span>代码文件</span></div><div class="metric"><strong>约 25.9 万行</strong><span>代码行数</span></div></div>
+</div>
     </div>
   </div>
   <div class="foot"><div class="title">真正的 Agent 产品，要能进入真实工作环境。</div><div>AI · WORK · HEALTH · LIFE</div></div>
@@ -1017,7 +1039,11 @@ SemiCrab：把复杂任务变成可恢复、可复盘的任务系统
   <div class="chrome"><div class="left"><span>29-31 · 走向长期主义</span><span class="sep"></span></div><div class="right">Vol.150 · 31 / 31</div></div>
   <div class="frame" style="padding-top:8vh">
     <h2 class="h-xl" data-anim>Thank you</h2>
-    <p class="lead credit" data-anim>此 slides 由 Codex + imagegen + html-ppt skill 联合制作</p>
+    <div class="link-grid" data-anim>
+      <a class="link-card" href="https://www.tap-say.com" target="_blank" rel="noopener"><strong>TapSay</strong><span>https://www.tap-say.com</span></a>
+      <a class="link-card" href="https://www.semicrab.cc" target="_blank" rel="noopener"><strong>SemiCrab</strong><span>https://www.semicrab.cc</span></a>
+      <a class="link-card" href="https://www.semibot.ai" target="_blank" rel="noopener"><strong>Semibot</strong><span>https://www.semibot.ai</span></a>
+    </div>
   </div>
   <div class="foot"><div class="title">此 slides 由 Codex + imagegen + html-ppt skill 联合制作</div><div>AI · WORK · HEALTH · LIFE</div></div>
 </section>
