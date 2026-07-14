@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f2f3ef">
-  <title>Achilles Yang | AI 产品与开源工具</title>
-  <meta name="description" content="Achilles Yang 的个人主页。记录正在做的 AI 产品、开源工具和对 AI 的思考。">
+  <title>Achilles Yang | 产品、工具与文章</title>
+  <meta name="description" content="Achilles Yang 的个人主页。这里放着我正在做的产品、开源工具和文章。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
-  <meta property="og:title" content="Achilles Yang | AI 产品与开源工具">
-  <meta property="og:description" content="记录正在做的 AI 产品、开源工具和对 AI 的思考。">
+  <meta property="og:title" content="Achilles Yang | 产品、工具与文章">
+  <meta property="og:description" content="这里放着我正在做的产品、开源工具和文章。">
   <meta property="og:url" content="https://goatgit.github.io/">
   <meta name="twitter:card" content="summary">
   <link rel="canonical" href="https://goatgit.github.io/">
-  <link rel="icon" href="./favicon-v2.svg" type="image/svg+xml">
+  <link rel="icon" href="./favicon-ay.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
   <script type="application/ld+json">
     {
@@ -25,8 +25,7 @@
       "sameAs": [
         "https://github.com/GoatGit",
         "https://semibot.ai",
-        "https://www.tap-say.com/",
-        "https://www.gemux.cn"
+        "https://www.tap-say.com/"
       ]
     }
   </script>
@@ -37,9 +36,8 @@
   <header class="site-header">
     <a class="site-name" href="#top">Achilles Yang</a>
     <nav aria-label="主要导航">
-      <a href="#principles">理念</a>
-      <a href="#products">产品</a>
-      <a href="#opensource">开源</a>
+      <a href="#products">作品</a>
+      <a href="#opensource">开源作品</a>
       <a href="#writing">文章</a>
       <a href="https://github.com/GoatGit" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
     </nav>
@@ -47,39 +45,28 @@
 
   <main id="main">
     <div class="intro" id="top">
-      <p class="lead">这些产品和开源项目围绕同一个问题：怎样让 AI 从一次性的回答，进入真实工作，接受验证，并在反复使用中持续改进。</p>
-      <p>Semibot、TapSay、极目营销、super-survey 和 vibe-cli-kit，分别从任务执行、输入、业务流程、调研方法和开发环境切入。</p>
+      <div class="career-map">
+        <span class="career-node career-node-researcher">研究员</span>
+        <span class="career-connector career-connector-one" aria-hidden="true"></span>
+        <span class="career-node career-node-engineer">工程师</span>
+        <span class="career-connector career-connector-two" aria-hidden="true"></span>
+        <span class="career-node career-node-product">产品经理</span>
+        <span class="career-connector career-connector-three" aria-hidden="true"></span>
+        <span class="career-node career-node-manager">高级管理者</span>
+      </div>
+      <p class="current-role">现在，是一名 <strong>AI 研究员</strong>，关注人工智能在工作、健康与业务中的应用。</p>
     </div>
 
-    <section id="principles" aria-labelledby="principles-title">
-      <h2 id="principles-title">理念</h2>
-      <div class="principles">
-        <article class="principle">
-          <h3>先定义目标和约束</h3>
-          <p>问题只是起点，不是目标函数。AI 不应顺着提问者的立场寻找支持材料，而要先还原真正需要解决的问题，明确约束，区分事实、假设、推断和价值判断。调研也不以报告看起来完整为终点，而在新增信息已经很难改变行动时停止。</p>
-        </article>
-        <article class="principle">
-          <h3>用证据和流程保证结果</h3>
-          <p>提示词只是入口，任务编排才决定 AI 能否进入真实工作。上下文、工具、权限、约束、日志和验收共同构成任务环境；引用、反方论证、敏感性分析、测试和人工复核则让结果可追溯。人负责方向、边界、取舍和最终结果。</p>
-        </article>
-        <article class="principle">
-          <h3>把重复工作沉淀下来</h3>
-          <p>AI 的价值不只是一轮任务更快。反复出现的工作应沉淀为模板、脚本、Skill、知识库或产品，让下一次执行有更完整的上下文、更稳定的流程和更低的验证成本。</p>
-        </article>
-      </div>
-    </section>
-
     <section id="products" aria-labelledby="products-title">
-      <h2 id="products-title">产品</h2>
+      <h2 id="products-title">作品</h2>
 
       <article class="entry entry-featured">
         <div class="entry-meta">通用智能体</div>
         <div class="entry-body">
           <h3><a href="https://semibot.ai" target="_blank" rel="noopener noreferrer">Semibot <span aria-hidden="true">↗</span></a></h3>
-          <p>装在电脑里的主动 AI 助手。它处理会话、提醒、文件和知识，把需要关注的事情摆到眼前，并整理任务中产生的内容。</p>
+          <p>解决问题，持续学习，自己沉淀知识库，全天候辅助你。</p>
           <figure>
             <img src="./assets/semibot-home.webp" alt="Semibot 新版官网使用的产品主视觉" loading="lazy">
-            <figcaption>Semibot 官网 V3 使用的桌面客户端主视觉</figcaption>
           </figure>
         </div>
       </article>
@@ -88,27 +75,20 @@
         <div class="entry-meta">AI 语音输入法</div>
         <div class="entry-body">
           <h3><a href="https://www.tap-say.com/" target="_blank" rel="noopener noreferrer">TapSay <span aria-hidden="true">↗</span></a></h3>
-          <p>桌面端 AI 语音输入法，支持语音输入、目标语言翻译和划词追问。它主要解决人向软件和 AI 输入内容时的摩擦。</p>
+          <p>用语音，就能打字、翻译和 AI 问答。</p>
         </div>
       </article>
 
-      <article class="entry">
-        <div class="entry-meta">营销科技</div>
-        <div class="entry-body">
-          <h3><a href="https://www.gemux.cn" target="_blank" rel="noopener noreferrer">极目营销 <span aria-hidden="true">↗</span></a></h3>
-          <p>程序化广告交易和智能投放产品，覆盖 ADX、DSP、流量治理与数据运营。</p>
-        </div>
-      </article>
     </section>
 
     <section id="opensource" aria-labelledby="opensource-title">
-      <h2 id="opensource-title">开源</h2>
+      <h2 id="opensource-title">开源作品</h2>
 
       <article class="entry">
         <div class="entry-meta">Python · MIT</div>
         <div class="entry-body">
           <h3><a href="https://github.com/GoatGit/super-survey" target="_blank" rel="noopener noreferrer">super-survey <span aria-hidden="true">↗</span></a></h3>
-          <p>一个多轮调研 Skill。它先明确问题、约束和证据标准，再组织资料、反方意见和结论，适合产品、市场、技术和开源项目调研。</p>
+          <p>一个面向 Agent 的通用调研技能，也是一套带约束的决策优化工作流。用于产品机会、市场、技术可行性、开源采用、尽调、政策和战略调研。</p>
         </div>
       </article>
 
@@ -116,25 +96,25 @@
         <div class="entry-meta">Shell · MIT</div>
         <div class="entry-body">
           <h3><a href="https://github.com/GoatGit/vibe-cli-kit" target="_blank" rel="noopener noreferrer">vibe-cli-kit <span aria-hidden="true">↗</span></a></h3>
-          <p>适用于 macOS、Linux 和 WSL 的终端环境安装工具。它把常用终端软件和一组可直接使用的默认配置放在一起。</p>
+          <p>一套给 macOS、Linux 和 WSL 准备的终端安装脚本。我把自己常用的软件和配置收在一起，换电脑或重装环境时可以少折腾一遍。</p>
         </div>
       </article>
     </section>
 
     <section id="writing" aria-labelledby="writing-title">
-      <h2 id="writing-title">文章与分享</h2>
+      <h2 id="writing-title">文章</h2>
       <article class="entry">
-        <div class="entry-meta">2026 · 论文 · 26 页</div>
+        <div class="entry-meta">论文</div>
         <div class="entry-body">
-          <h3><a href="https://github.com/GoatGit/super-survey/blob/main/%E5%A6%82%E4%BD%95%E6%8B%92%E7%BB%9DAI%E8%B0%84%E5%AA%9A%E4%BA%BA%E7%B1%BB.pdf" target="_blank" rel="noopener noreferrer">拒绝 AI 谄媚人类：用约束优化方法重构开放式调研 <span aria-hidden="true">↗</span></a></h3>
-          <p>讨论开放式调研中的 AI 谄媚风险，并将调研从回答生成重构为带约束的决策优化。方法包括目标重建、反事实分析、对抗验证、贝叶斯更新和残差驱动的证据迭代。</p>
+          <h3><a href="https://github.com/GoatGit/super-survey/blob/main/%E5%A6%82%E4%BD%95%E6%8B%92%E7%BB%9DAI%E8%B0%84%E5%AA%9A%E4%BA%BA%E7%B1%BB.pdf" target="_blank" rel="noopener noreferrer">《拒绝 AI 谄媚人类：用约束优化方法重构开放式调研》 <span aria-hidden="true">↗</span></a></h3>
+          <p>AI 很容易顺着提问者的判断往下说。这篇文章试着把开放式调研变成一套有目标、有约束，也允许被新证据推翻的决策过程。</p>
         </div>
       </article>
       <article class="entry">
-        <div class="entry-meta">2026 · 网页 PPT</div>
+        <div class="entry-meta">分享</div>
         <div class="entry-body">
-          <h3><a href="./slides/ai-150/">给 AI 装上方向盘，驶向 150 岁的松弛人生 <span aria-hidden="true">↗</span></a></h3>
-          <p>一次关于 AI 工作方法、健康、业务和长期成长的分享。</p>
+          <h3><a href="./slides/ai-150/">《给 AI 装上方向盘，驶向 150 岁的松弛人生》 <span aria-hidden="true">↗</span></a></h3>
+          <p>一次把我的 AI 实践串起来的分享：怎么搭工作流，怎么让 AI 进入业务，以及为什么最后仍要回到健康、生活和长期积累。</p>
         </div>
       </article>
     </section>
@@ -143,7 +123,7 @@
 
   <footer class="site-footer">
     <p>© 2026 Achilles Yang</p>
-    <p>AI 产品与开源工具</p>
+    <p>产品、工具与文章</p>
     <p><a href="https://github.com/GoatGit" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></p>
   </footer>
 </body>
